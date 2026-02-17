@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaOS 博客</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        /* 顶部导航栏 */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 18px;
+            font-size: 18px;
+            background: rgba(255,255,255,0.85);
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* 头图 Banner */
+        .hero {
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            background: url("https://picsum.photos/1600/800?blur=2") center/cover no-repeat;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 60px;
+            margin: 0;
+            font-weight: 800;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        .hero p {
+            font-size: 22px;
+            max-width: 700px;
+            margin-top: 15px;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+
+        /* 按钮 */
+        .buttons {
+            margin-top: 25px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            background: #4CAF50;
+            color: white;
+        }
+        .buttons a:hover {
+            background: #43A047;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">首页</a>
+        <a href="/about.html">关于</a>
+        <a href="/blog.html">文章</a>
+    </nav>
+
+    <section class="hero">
+        <h1>CasaOS 博客</h1>
+        <p>记录我的技术成长、开源探索、以及生活感悟。</p>
+        <div class="buttons">
+            <a href="/about.html">了解我</a>
+            <a href="/blog.html">阅读文章</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 CasaOS Blog — Powered by GitHub Pages
+    </footer>
+
+</body>
+</html>
